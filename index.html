@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/NGSTmX6b/23323342332334icon-1-removebg-preview-topaz-upscale-2x-1-removebg-preview-topaz-upscale-2x.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost VPN: Your private access to the Internet</title>
+    <meta name="description" content="Ghost VPN - Глобальная сеть премиум серверов. Серверы Финляндии бесплатно и навсегда для первой 1000 пользователей. Максимальная безопасность и скорость.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Space Background -->
+    <div class="space-bg"></div>
+    <div class="stars"></div>
+
+    
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <img src="https://i.postimg.cc/NGSTmX6b/23323342332334icon-1-removebg-preview-topaz-upscale-2x-1-removebg-preview-topaz-upscale-2x.png" alt="Ghost VPN Logo">
+          <span>Ghost VPN</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#servers" data-i18n="nav_features">Возможности</a></li>
+          <li><a href="#pricing" data-i18n="nav_pricing">Тарифы</a></li>
+          <li><a href="#contact" data-i18n="nav_contacts">Контакты</a></li>
+          <li><a href="#download" class="nav-download" data-i18n="download_btn">Скачать</a></li>
+        </ul>
+        <select id="langSwitcher" aria-label="Language switcher">
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+          <option value="zh">中文</option>
+        </select>
+      </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+      <main class="main-content">
+        <!-- Promo Badge -->
+        <a class="promo-badge" data-i18n="promo_badge" href="#download" onclick="document.querySelector('#download').scrollIntoView({behavior: 'smooth'}); return false;">
+          🇫🇮 СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ: ФИНЛЯНДИЯ PREMIUM БЕСПЛАТНО
+        </a>
+
+        <!-- Hero Section -->
+        <h1 class="hero-title" data-i18n="hero_title">Ghost VPN</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          Обретите полную анонимность и свободу в сети. В рамках стартовой программы для нашего VPN на ПК мы предоставляем <strong>пожизненный бесплатный доступ</strong> к премиум-серверам в Финляндии для первых 1000 пользователей.
+        </p>
+
+        <!-- Connect Button -->
+        <button class="connect-btn" id="connectBtn">
+          <div class="connect-btn-text" data-i18n="connect_btn">Подключиться</div>
+        </button>
+
+        <!-- Server Stats -->
+        <div class="server-stats">
+          <div class="stat">
+            <div class="stat-number">10Gbps</div>
+            <div class="stat-label" data-i18n="stat_ports">Порты</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">AES-256</div>
+            <div class="stat-label" data-i18n="stat_encryption">Шифрование</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">No-Logs</div>
+            <div class="stat-label" data-i18n="stat_policy">Политика</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">WireGuard®</div>
+            <div class="stat-label" data-i18n="stat_protocol">Протокол</div>
+          </div>
+        </div>
+
+        <!-- Server Locations -->
+        <section class="servers-section" id="servers">
+          <h2 class="section-title" data-i18n="servers_section_title">Лучший VPN для России</h2>
+          <p class="hero-subtitle" data-i18n="servers_section_desc">
+              GhostVPN сочетает VPN-туннели (WireGuard, OpenVPN), умные прокси (HTTPS/SOCKS5) и фирменные алгоритмы обфускации. Благодаря этому вы обходите DPI, РКН и любые корпоративные фаерволы. Ни один зарубежный сервис сегодня не предлагает того, что даёт GhostVPN.
+          </p>
+
+          <div class="features russia-features">
+              <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <h3 data-i18n="feature_title_1">DPI-Stealth &amp; Обфускация</h3>
+                <p data-i18n="feature_desc_1">Трафик маскируется под обычный HTTPS и проходит сквозь самые строгие фильтры.</p>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">🔀</div>
+                <h3 data-i18n="feature_title_2">Прокси-цепочки</h3>
+                <p data-i18n="feature_desc_2">Встроенные HTTP(S)/SOCKS5-прокси для браузеров и приложений без установки клиента.</p>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h3 data-i18n="feature_title_3">10 Gbps peer-to-RU</h3>
+                <p data-i18n="feature_desc_3">Серверы в friendly-юрисдикциях с прямым высокоскоростным пирингом в Россию.</p>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3 data-i18n="feature_title_4">True No-Logs</h3>
+                <p data-i18n="feature_desc_4">Мы физически не можем передать данные, которые не собираем. Логи отсутствуют полноcтью.</p>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3 data-i18n="feature_title_5">Подключение в один клик</h3>
+                <p data-i18n="feature_desc_5">Приложение и расширения подключают вас за секунды без сложных настроек.</p>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <h3 data-i18n="feature_title_6">Комплексная защита от утечек</h3>
+                <p data-i18n="feature_desc_6">Kill Switch, DNS-over-HTTPS и блокировка WebRTC исключают риск деанонимизации.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+          <h2 class="section-title" data-i18n="pricing_section_title">Тарифные планы</h2>
+          <div class="pricing-cards">
+            <div class="pricing-card featured">
+              <div class="card-header">
+                <div class="badge" data-i18n="recommended_badge">Рекомендуем</div>
+                <h3 data-i18n="starter_plan">Стартовый план (Для ПК)</h3>
+                <div class="price">
+                  <span class="old-price" data-i18n="old_price">299₽/мес</span>
+                  <span class="new-price" data-i18n="new_price">БЕСПЛАТНО</span>
+                </div>
+              </div>
+              <ul class="features-list">
+                <li data-i18n="feature_1">✅ 1 сервер в Финляндии</li>
+                <li data-i18n="feature_2">✅ Безлимитный трафик</li>
+                <li data-i18n="feature_3">✅ Скорость 100 Мбит/с</li>
+                <li data-i18n="feature_4">✅ Протокол WireGuard</li>
+                <li data-i18n="feature_5">✅ Гарантия отсутствия логов</li>
+                <li data-i18n="feature_6">✅ Пожизненно бесплатно</li>
+              </ul>
+              <div class="limited-offer" data-i18n="limited_offer">
+                🔥
+              </div>
+              <button class="download-btn" data-i18n="download_btn" onclick="document.querySelector('#download').scrollIntoView({behavior: 'smooth'})">Загрузить</button>
+            </div>
+            
+            <div class="pricing-card">
+              <div class="card-header">
+                <h3 data-i18n="premium_title">Глобальный Премиум</h3>
+                <div class="plan-selector">
+                    <button class="plan-btn" data-period="month" data-i18n="premium_month_btn">Месяц</button>
+                    <button class="plan-btn active" data-period="half-year" data-i18n="premium_halfyear_btn">6 месяцев</button>
+                    <button class="plan-btn best-value" data-period="year" data-i18n="premium_year_btn">Год<span class="best-value-badge" data-i18n="best_value_badge">Выгодно</span></button>
+                </div>
+                <div class="price">
+                  <span class="new-price" id="premium-price">399₽<span class="period" data-i18n="premium_price_period">/мес</span></span>
+                </div>
+                <div class="price-info" id="premium-price-info" data-i18n="premium_monthly_payment">Ежемесячная оплата</div>
+              </div>
+              <ul class="features-list">
+                <li data-i18n="premium_feature_1">✅ 70+ серверов в 14+ странах</li>
+                <li data-i18n="premium_feature_2">✅ Все протоколы (WireGuard, OpenVPN, IKEv2)</li>
+                <li data-i18n="premium_feature_3">✅ Скорость до 1 Гбит/с</li>
+                <li data-i18n="premium_feature_4">✅ Доступ к стриминговым сервисам</li>
+                <li data-i18n="premium_feature_5">✅ Разрешены P2P и торренты</li>
+                <li data-i18n="premium_feature_6">✅ 7 одновременных подключений</li>
+                <li data-i18n="premium_feature_7">✅ Приоритетная техподдержка</li>
+                <li data-i18n="premium_feature_8">✅ 30 дней гарантии возврата средств</li>
+              </ul>
+              <button class="payment-btn" id="paymentBtn" data-i18n="pay_btn">Оплатить</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Payment Modal -->
+        <div class="modal" id="paymentModal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-i18n="modal_checkout_title">Оформление подписки</h2>
+            <div class="selected-plan">
+              <h3><span data-i18n="modal_selected_plan_label">Выбранный план:</span> <span id="selectedPlanName">Глобальный Премиум</span></h3>
+              <p class="plan-price" id="selectedPlanPrice">399₽/мес</p>
+            </div>
+            <form id="paymentForm">
+              <div class="form-group">
+                <label for="email" data-i18n="modal_email_label">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Введите ваш email" data-i18n="modal_email_placeholder">
+              </div>
+              <div class="payment-methods">
+                <h3 data-i18n="modal_payment_method_label">Выберите способ оплаты</h3>
+                <div class="payment-options">
+                  <button type="button" class="payment-method" data-method="mir">
+                    <img src="https://i.postimg.cc/s26KSStj/mir-974320c83e29c333a9fd7d40e7e4bcb3.png" alt="МИР">
+                    <span>МИР</span>
+                  </button>
+                  <button type="button" class="payment-method" data-method="sbp">
+                    <img src="https://i.postimg.cc/xdytdhPz/spb-0.png" alt="СБП">
+                    <span>СБП</span>
+                  </button>
+                  <button type="button" class="payment-method" data-method="visa">
+                    <img src="https://i.postimg.cc/t1cFL3Gh/visa.png" alt="Visa">
+                    <span>Visa</span>
+                  </button>
+                  <button type="button" class="payment-method" data-method="mastercard">
+                    <img src="https://i.postimg.cc/NjNRPtbb/mastercard-og-image.png" alt="Mastercard">
+                    <span>Mastercard</span>
+                  </button>
+                  <button type="button" class="payment-method" data-method="robokassa">
+                    <img src="https://i.postimg.cc/pVGxT104/robokassa.png" alt="Robokassa">
+                    <span>Robokassa</span>
+                  </button>
+                  <button type="button" class="payment-method" data-method="paypal">
+                    <img src="https://i.postimg.cc/d13HSn8Z/paypal.png" alt="PayPal">
+                    <span>PayPal</span>
+                  </button>
+                </div>
+              </div>
+              <button type="submit" class="submit-payment" data-i18n="modal_submit_payment_btn">Оплатить</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+          <h2 class="section-title" data-i18n="guarantees_title">Наши гарантии</h2>
+          <div class="trust-stats">
+            <div class="trust-item">
+              <div class="trust-number">100%</div>
+              <div class="trust-label" data-i18n="guarantee_1_desc">Прозрачность</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-number">Next-Gen</div>
+              <div class="trust-label" data-i18n="guarantee_2_desc">Протоколы</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-number" data-i18n="guarantee_3_title">В планах</div>
+              <div class="trust-label" data-i18n="guarantee_3_desc">Независимый аудит</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-number">24/7</div>
+              <div class="trust-label" data-i18n="guarantee_4_desc">Поддержка</div>
+            </div>
+          </div>
+          <div class="certifications">
+            <div class="cert-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feat-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg><span data-i18n="guarantee_pill_1">Фокус на качестве</span></div>
+            <div class="cert-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feat-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg><span data-i18n="guarantee_pill_2">Открытый исходный код</span></div>
+            <div class="cert-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feat-icon"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg><span data-i18n="guarantee_pill_3">Ориентация на пользователя</span></div>
+            <div class="cert-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feat-icon"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg><span data-i18n="guarantee_pill_4">Постоянное развитие</span></div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+          <h2 class="section-title" data-i18n="contact_title">Свяжитесь с нами</h2>
+          <p class="hero-subtitle" data-i18n="contact_subtitle">Есть вопросы или предложения? Мы всегда на связи.</p>
+          <a href="mailto:support@ghostvpn.com" class="contact-button">support@ghostvpn.com</a>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download-section" id="download">
+            <h2 class="section-title" data-i18n="download_title">Скачать Ghost VPN</h2>
+            <p class="hero-subtitle" data-i18n="download_subtitle">Один клик до полной анонимности на вашем ПК. The service is temporarily unavailable Скачайте Ghost VPN для Windows и будьте защищены.</p>
+            <a href="#" class="download-cta" data-i18n="download_cta">Скачать для Windows</a>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="#" id="privacyLink" data-i18n="privacy_policy">Политика конфиденциальности</a>
+            <a href="#" id="termsLink" data-i18n="terms_of_use">Условия использования</a>
+          </div>
+          <p data-i18n="footer_copyright">&copy; 2024 GhostVPN. Все права защищены.</p>
+          <p data-i18n="footer_slogan">Максимальная безопасность • Глобальная сеть • Ориентация на пользователя</p>
+        </div>
+      </footer>
+    <div class="modal" id="privacyModal">
+      <div class="modal-content">
+        <span class="close-modal" id="privacyClose">&times;</span>
+        <div class="legal-text">
+          <h1 data-i18n="privacy_policy_title">Политика конфиденциальности</h1>
+          <p><em data-i18n="privacy_policy_last_update">Последнее обновление: 16 июня 2025 г.</em></p>
+
+          <h2 data-i18n="privacy_policy_main_guarantee">Наша главная гарантия: отсутствие логов</h2>
+          <p data-i18n="privacy_policy_main_guarantee_desc">Мы в GhostVPN ценим вашу приватность превыше всего. Наша система построена на фундаментальном принципе: <strong data-i18n="privacy_policy_no_logs">мы не собираем, не храним и не передаем логи вашей активности</strong>. Это означает, что мы не отслеживаем вашу историю просмотров, IP-адреса, временные метки подключений, DNS-запросы или трафик.</p>
+
+          <h2 data-i18n="privacy_policy_no_collect_title">Какие данные мы НЕ собираем</h2>
+          <ul>
+              <li data-i18n="privacy_policy_no_collect_ip">IP-адреса (ни входящие, ни VPN-адреса)</li>
+              <li data-i18n="privacy_policy_no_collect_history">Историю посещенных сайтов</li>
+              <li data-i18n="privacy_policy_no_collect_traffic">Объем использованного трафика</li>
+              <li data-i18n="privacy_policy_no_collect_dns">DNS-запросы</li>
+              <li data-i18n="privacy_policy_no_collect_files">Любую информацию о файлах, которые вы скачиваете или загружаете</li>
+          </ul>
+
+          <h2 data-i18n="privacy_policy_collect_title">Какие данные мы собираем (для работы сервиса)</h2>
+          <p data-i18n="privacy_policy_collect_intro">Для предоставления услуг нам необходим минимальный объем информации:</p>
+          <ul>
+              <li data-i18n="privacy_policy_collect_email"><strong>Адрес электронной почты:</strong> используется для создания вашего аккаунта и связи с вами.</li>
+              <li data-i18n="privacy_policy_collect_payment"><strong>Платежная информация:</strong> платежи обрабатываются нашими партнерами. Мы не храним данные вашей банковской карты и видим только факт оплаты и ее сумму.</li>
+          </ul>
+
+          <h2 data-i18n="privacy_policy_security_title">Безопасность данных</h2>
+          <p data-i18n="privacy_policy_security_desc">Мы используем передовые методы шифрования и лучшие практики безопасности для защиты вашего аккаунта и минимальных данных, которые мы храним.</p>
+
+          <h2 data-i18n="privacy_policy_changes_title">Изменения в политике</h2>
+          <p data-i18n="privacy_policy_changes_desc">Мы можем обновлять эту политику. В случае значительных изменений мы уведомим вас по электронной почте.</p>
+
+          <p class="disclaimer" data-i18n="privacy_policy_disclaimer"><strong>Важное примечание:</strong> Этот документ является базовым шаблоном. Для обеспечения полного соответствия законодательству вашей юрисдикции рекомендуется проконсультироваться с профессиональным юристом.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div class="modal" id="termsModal">
+      <div class="modal-content">
+        <span class="close-modal" id="termsClose">&times;</span>
+        <div class="legal-text">
+          <h1 data-i18n="terms_title">Условия использования</h1>
+          <p><em data-i18n="terms_last_update">Последнее обновление: 16 июня 2025 г.</em></p>
+
+          <h2 data-i18n="terms_section1_title">1. Принятие условий</h2>
+          <p data-i18n="terms_section1_desc">Используя сервис GhostVPN (далее «Сервис»), вы соглашаетесь с настоящими Условиями использования. Если вы не согласны с ними, пожалуйста, не используйте наш Сервис.</p>
+
+          <h2 data-i18n="terms_section2_title">2. Запрещенная деятельность</h2>
+          <p data-i18n="terms_section2_desc">Вы соглашаетесь не использовать Сервис для следующих целей:</p>
+          <ul>
+              <li data-i18n="terms_section2_list1">Любая незаконная деятельность, включая, но не ограничиваясь, нарушением авторских прав, мошенничеством, распространением вредоносного ПО.</li>
+              <li data-i18n="terms_section2_list2">Спам, фишинг, DDoS-атаки.</li>
+              <li data-i18n="terms_section2_list3">Попытки получить несанкционированный доступ к другим системам.</li>
+              <li data-i18n="terms_section2_list4">Любая деятельность, которая наносит вред нашему Сервису или его пользователям.</li>
+          </ul>
+
+          <h2 data-i18n="terms_section3_title">3. Политика отсутствия логов</h2>
+          <p data-i18n="terms_section3_desc">Мы придерживаемся строгой политики отсутствия логов, как описано в нашей Политике конфиденциальности. Мы не можем предоставить данные о вашей активности, потому что мы их просто не храним.</p>
+
+          <h2 data-i18n="terms_section4_title">4. Прекращение использования</h2>
+          <p data-i18n="terms_section4_desc">Мы оставляем за собой право приостановить или прекратить ваш доступ к Сервису в любое время, если мы обнаружим нарушение настоящих Условий.</p>
+
+          <h2 data-i18n="terms_section5_title">5. Отказ от гарантий</h2>
+          <p data-i18n="terms_section5_desc">Сервис предоставляется «как есть». Мы не гарантируем, что он будет работать без ошибок или перебоев.</p>
+
+          <p class="disclaimer" data-i18n="terms_disclaimer"><strong>Важное примечание:</strong> Этот документ является базовым шаблоном. Для обеспечения полного соответствия законодательству вашей юрисдикции рекомендуется проконсультироваться с профессиональным юристом.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
